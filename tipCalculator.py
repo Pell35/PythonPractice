@@ -7,4 +7,4 @@ decimal = int(percent) / 100
 tip = float(cost)*decimal
 
 total = float(cost)+tip
-print("To tip " + percent +"% Your tip will be: $" + str(tip) + "Your total cost will be : $" + str(total))
+print("To tip " + percent +"% Your tip will be: $" + str(tip) + ". Your total cost will be : $" + str(total))
