@@ -30,6 +30,9 @@ dealer_card_val = int(dealer_card1_val) + int(dealer_card2_val)
 
 
 answer = input("You were dealt: " + str(random_card1) + " & " + str(random_card2) + ". \nThere value is: " +  str(player_card_val) + ". \n Dealer card value is: " + str(dealer_card_val) + ". \n Would you like to hold or hit? ")
+if dealer_card_val < 17:
+    dealer_card3 = random.choice(list(card_values.keys()))
+    dealer_card3_val = card_values[dealer_card3]  
 
 if answer == "hit":
     random_card3 = random.choice(list(card_values.keys()))
