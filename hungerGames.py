@@ -40,19 +40,29 @@ hunger_games_characters.remove(ally3)
 
 print("Your allies are: " + ally1 + ", " + ally2 + ", "+ ally3 + ".\n")
 
-enemy = random.choice(hunger_games_characters) 
+enemy1 = random.choice(hunger_games_characters) 
 
-hunger_games_characters.remove(enemy)
+hunger_games_characters.remove(enemy1)
 
-print(" Your main enemy is: " + enemy)
+enemy2 = random.choice(hunger_games_characters) 
 
+hunger_games_characters.remove(enemy2)
+
+enemy3 = random.choice(hunger_games_characters) 
+
+hunger_games_characters.remove(enemy3)
+
+print(" Your main enemy are: " + enemy1 +  ", " + enemy2 + ", "+ enemy3 + ".\n")
 pick= []
 
 pick.append(you)
 pick.append(ally1)
 pick.append(ally2)
 pick.append(ally3)
-pick.append(enemy)
+pick.append(enemy1)
+pick.append(enemy2)
+pick.append(enemy3)
+
 
 victor = random.choice(pick)
 
