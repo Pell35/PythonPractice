@@ -70,5 +70,7 @@ pick.remove(bloodbath2)
 
 print(bloodbath1 + " and " + bloodbath2 + "were both killed in the beginning bloodbath. \n")
 victor = random.choice(pick)
-
-print("The victor in your Hunger games is: " + victor)
+if victor == you:
+   print("You are the victor! Good job, " + you +"!") 
+else:
+    print("The victor in your Hunger games is: " + victor + ". You have died in the 76th Hunger Games!")
