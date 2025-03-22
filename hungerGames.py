@@ -63,7 +63,12 @@ pick.append(enemy1)
 pick.append(enemy2)
 pick.append(enemy3)
 
+bloodbath1= random.choice(pick)
+pick.remove(bloodbath1)
+bloodbath2=random.choice(pick)
+pick.remove(bloodbath2)
 
+print(bloodbath1 + " and " + bloodbath2 + "were both killed in the beginning bloodbath. \n")
 victor = random.choice(pick)
 
 print("The victor in your Hunger games is: " + victor)
